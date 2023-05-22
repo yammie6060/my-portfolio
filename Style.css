@@ -74,10 +74,6 @@ ul li a:hover{
 .info a:hover{
 background:rgb(11, 124, 100);
 }
-.info b{
-    color: orange;
-}
-
 .image{
     width:17px;
     height:10px;
