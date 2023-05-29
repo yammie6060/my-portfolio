@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Greetings Based on time </title>
+        
+            <meta name="viewport" content="width=device-width" initial-scale="1">
+            <link rel="stylesheet" href="style.css">
+        <script>
+            function SayGreeting(){
+                var date=new Date();
+                var hours= date.getHours();
+                var greet;
+                if(hours<12){
+                    greet="Good Morning!";
+                }
+                else if(hours<18){
+                    greet="Good Afternoon!";
+                }
+                else{
+                    greet="Good evening";
+                }
+                document.getElementById("greet").innerHTML=greet;
+            }
+        </script>
+    </head>
+    <body onload="SayGreeting()">
+        <div id="greet"></div>
+        
+            <div class="main" > 
+            <div class="name">
+              
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="My Portfolio.html">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>  <hr>
+        </div>
+        <br> 
+        <div class="image" ><img src="yamie.jpg" width="200">  
+        </div>
+            
+       
+        <br>
+        <div class="info">
+            <br>
+            <br>
+            <h3>YAMIKANI SUWEDI</h3>
+            <br>
+            <h1>// <b style="color: orange;"> W</b>EB <b style="color: orange;">D</b>ESIGNER //</h1>
+            <p>Web designer and also a developer from Malawi. </p>
+            <br>
+            <a href="#"> View more </a>
+ 
+        </div> 
+            </div>  
+
+         <br>
+         <br>
+
+    </body>
+</html>
