@@ -15,7 +15,7 @@
                $Db="my_db";
                $connect=mysqli_connect($servername,$username,$password,"$Db");
                if($connect){
-                echo"Connection successful <br> <br>";
+                echo "<b>"."Connection successful <br> <br>";
                }
                else{
                 echo"Connection failed";
@@ -24,7 +24,7 @@
                $result=mysqli_query($connect,$query);
              
                 while($row=mysqli_fetch_assoc($result)){
-                    echo "Id Number:"." ".$row["Id"]."<br>"."Name:"." ".$row["Name"]."<br>"."Phone Number:"." ".$row["Phone_Number"]."<br>"."Email Address:"." ".$row["Email_Address"];
+                    echo "<b>". "Id Number:"." ".$row["Id"]."<br>"."Name:"." ".$row["Name"]."<br>"."Phone Number:"." ".$row["Phone_Number"]."<br>"."Email Address:"." ".$row["Email_Address"];
                 }
               
                ?>
